@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/build/src",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/33_Homework_1.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\33_Homework_1.dir\\main.cpp.obj -c C:\\Users\\yodji\\source\\repos\\Lesson_Skillbox\\Lesson_33_Iskluchenia\\33_Homework_1\\src\\main.cpp",
+  "file": "C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/src/main.cpp",
+  "output": "src/CMakeFiles/33_Homework_1.dir/main.cpp.obj"
+}
+]
