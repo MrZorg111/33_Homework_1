@@ -57,7 +57,7 @@ int main() {
     Basket basket;
     market.getMap();
     std::cout << "Приветствуем вас, дорогой покупатель, чего желаете?" << std::endl;
-    user_input(mar);
+    user_input(market, basket);
     market.getMap();
    
 
