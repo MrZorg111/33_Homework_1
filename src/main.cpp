@@ -21,20 +21,32 @@ public:
     }
     }
 
-    void getMap() {
+    void getMarket() {
         std::cout << "Products in the store: " << std::endl;
         for(std::map<std::string, int> :: iterator it = data_base.begin(); it != data_base.end(); it++) {
             std::cout << "Articulate " << it->first << "\t" << " Volume " << it->second << std::endl;
         }
     }
     void setRemoveVolumeMarket(std::string basket_art, int basket_vol) {
-        data_base.find(basket_art)->second -= basket_vol;
+       auto it = data_base.find(basket_art);
+       data_base.insert(std::pair<std::string, int> (it->first, (it->second -= basket_vol)));
     }
 };
 
 class Basket {
     std::map<std::string, int> basket_buyer;
 public:
+    void getBasket() {
+        if(!basket_buyer.empty()) {
+        std::cout << "Basket-Buyer: " << std::endl;
+        for(std::map<std::string, int> :: iterator it = basket_buyer.begin(); it != basket_buyer.end(); it++) {
+            std::cout << "Articulate " << it->first << "\t" << " Volume " << it->second << std::endl;
+        }
+        }
+        else{
+            std::cout << "Basket-Buyer Empty! " << std::endl;
+        }
+    }
     void putInBasket(std::string input_art, int input_vol) {
         basket_buyer.insert(std::pair<std::string, int> (input_art, input_vol));
     }
@@ -43,10 +55,10 @@ public:
 
 };
 
-void user_input (Market _market, Basket _basket) {
+void user_input (Market& _market, Basket& _basket) {
     std::string articule("I");
     int volume(0);
-    std::cout << "Введите артикул и желаемое количество товара: " << std::endl;
+    std::cout << "Enter the article and the desired quantity of the product: " << std::endl;
     std::cin >> articule >> volume;
     _basket.putInBasket(articule, volume);
     _market.setRemoveVolumeMarket(articule, volume);
@@ -55,30 +67,12 @@ void user_input (Market _market, Basket _basket) {
 int main() {
     Market market;
     Basket basket;
-    market.getMap();
-    std::cout << "Приветствуем вас, дорогой покупатель, чего желаете?" << std::endl;
+    market.getMarket();
+    std::cout << "Greetings, dear customer, what do you want?" << std::endl;
     user_input(market, basket);
-    market.getMap();
+    market.getMarket();
+    basket.getBasket();
    
 
-
+    return 0;
 }
-/*
-Что нужно сделать
-
-Реализуйте простую и безопасную модель работы корзины онлайн-магазина.
-
-В начале программы вы заполняете базу данных самого магазина через стандартную консоль. 
-Каждый элемент этой базы данных состоит из двух компонентов — артикула и количества штук.
-Корзина должна поддерживать следующие операции: добавление товара с указанным его количеством — add, удаление товара с указанным количеством — remove.
-Обе операции принимают артикул товара в виде строки и количество в виде целого числа.
-При вводе аргументов к операциям должна осуществляться их валидация. 
-Артикул должен быть в базе данных магазина, количество не должно превышать количество доступного продукта на складе (при удалении — в корзине).
-
-wwРекомендации
-
-В качестве контейнера для базы данных и самой корзины можете использовать std::map.
-
-Если пользователь ввёл некорректную информацию, то лучше выбросить std::invalid_argument, в других случаях — runtime_error. 
-
-*/

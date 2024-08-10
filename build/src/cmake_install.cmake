@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/src
+# Install script for directory: C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,7 +32,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
+# Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "C:/mingw64/bin/objdump.exe")
 endif()
