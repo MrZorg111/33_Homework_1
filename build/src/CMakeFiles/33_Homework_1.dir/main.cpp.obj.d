@@ -1,5 +1,5 @@
 src/CMakeFiles/33_Homework_1.dir/main.cpp.obj: \
- C:\Users\yodji\Documents\Skillbox_Lessons\Lesson_33\33_Homework_1\src\main.cpp \
+ C:\Users\yodji\source\repos\Lesson_Skillbox\Lesson_33_Iskluchenia\33_Homework_1\src\main.cpp \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/iostream \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/requires_hosted.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -142,12 +142,20 @@ src/CMakeFiles/33_Homework_1.dir/main.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/ostream.tcc \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/istream \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/istream.tcc \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/include/function.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/fstream \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/codecvt.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/fstream.tcc \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/json.hpp \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/map \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_tree.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ext/aligned_buffer.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/node_handle.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_map.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_multimap.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/erase_if.h \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/json.hpp \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/algorithm \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_algo.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/algorithmfwd.h \
@@ -162,10 +170,7 @@ src/CMakeFiles/33_Homework_1.dir/main.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/unordered_map.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/hashtable.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/hashtable_policy.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ext/aligned_buffer.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/enable_special_members.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/node_handle.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/erase_if.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/vector \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_uninitialized.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_vector.h \
@@ -192,16 +197,12 @@ src/CMakeFiles/33_Homework_1.dir/main.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/pstl/glue_memory_defs.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/utility \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_relops.h \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/adl_serializer.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/abi_macros.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/conversions/from_json.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/adl_serializer.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/abi_macros.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/conversions/from_json.hpp \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/forward_list \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/forward_list.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/forward_list.tcc \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/map \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_tree.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_map.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_multimap.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/valarray \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cmath \
  C:/mingw64/x86_64-w64-mingw32/include/math.h \
@@ -228,30 +229,30 @@ src/CMakeFiles/33_Homework_1.dir/main.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/gslice_array.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/mask_array.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/indirect_array.h \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/exceptions.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/value_t.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/exceptions.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/value_t.hpp \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstdint \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/macro_scope.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/meta/detected.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/meta/void_t.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/thirdparty/hedley/hedley.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/macro_scope.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/meta/detected.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/meta/void_t.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/thirdparty/hedley/hedley.hpp \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/version \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cassert \
  C:/mingw64/x86_64-w64-mingw32/include/assert.h \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/string_escape.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/input/position_t.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/meta/cpp_future.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/meta/type_traits.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/iterators/iterator_traits.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/meta/call_std/begin.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/meta/call_std/end.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/json_fwd.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/string_concat.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/string_escape.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/input/position_t.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/meta/cpp_future.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/meta/type_traits.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/iterators/iterator_traits.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/meta/call_std/begin.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/meta/call_std/end.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/json_fwd.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/string_concat.hpp \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/cstring \
  C:/mingw64/x86_64-w64-mingw32/include/string.h \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/meta/identity_tag.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/meta/std_fs.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/meta/identity_tag.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/meta/std_fs.hpp \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/filesystem \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/fs_fwd.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/chrono.h \
@@ -272,31 +273,31 @@ src/CMakeFiles/33_Homework_1.dir/main.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/codecvt \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/fs_dir.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/fs_ops.h \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/conversions/to_json.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/iterators/iteration_proxy.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/byte_container_with_subtype.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/hash.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/input/binary_reader.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/input/input_adapters.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/conversions/to_json.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/iterators/iteration_proxy.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/byte_container_with_subtype.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/hash.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/input/binary_reader.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/input/input_adapters.hpp \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/numeric \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_numeric.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/pstl/glue_numeric_defs.h \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/input/json_sax.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/input/lexer.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/meta/is_sax.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/input/parser.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/iterators/internal_iterator.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/iterators/primitive_iterator.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/iterators/iter_impl.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/json_custom_base_class.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/json_pointer.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/json_ref.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/output/binary_writer.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/output/output_adapters.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/output/serializer.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/conversions/to_chars.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/ordered_map.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/input/json_sax.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/input/lexer.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/meta/is_sax.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/input/parser.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/iterators/internal_iterator.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/iterators/primitive_iterator.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/iterators/iter_impl.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/json_custom_base_class.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/json_pointer.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/json_ref.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/output/binary_writer.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/output/output_adapters.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/output/serializer.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/conversions/to_chars.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/ordered_map.hpp \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/any \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/detail/macro_unscope.hpp \
- C:/Users/yodji/Documents/Skillbox_Lessons/Lesson_33/33_Homework_1/nlohmann_json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/detail/macro_unscope.hpp \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp
