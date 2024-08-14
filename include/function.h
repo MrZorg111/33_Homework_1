@@ -6,11 +6,31 @@
 #include <string>
 #include <exception>
 
-class UncorrectInputVolume: public std::exception {
-    const char* what() const noexcept override {
-        std::cout << "Error! Uncorrect volume!" << std::endl;
+bool stop_input() {
+    std::string stop_word;
+    std::cout << "To stop filling, enter ""stop""." << std::endl;
+    std::cin >> stop_word;
+
+    if (stop_word == "stop") {
+        return false;
+    } 
+    else {
+        return true;
     }
-};
+}
+
+bool market_loading() {
+    std::string answer;
+    std::cout << " Enter yes/no: " << std::endl;
+    std::cin >> answer;
+    if (answer == "yes") {
+        return true;
+    }
+    else {
+         return false;
+    }
+}
+
 class Market {
     std::map<std::string, int> data_base;
 public:
@@ -28,6 +48,22 @@ public:
     }
     }
 
+    void setHandleLoaderMarket() {
+        std::string articule;
+        int volume;
+        bool handle_input = true;
+        std::cout << "Enter the article and the desired quantity of the product: " << std::endl;
+        
+        while(handle_input) { 
+            std::cout << "Articule - ";
+            std::cin >> articule;
+            std::cout << "Volume - ";
+            std::cin >> volume;
+
+            data_base.insert(std::pair<std::string, int> (articule, volume));
+            handle_input = stop_input();
+        }
+    }
     void getMarket() {
         std::cout << "Products in the store: " << std::endl;
         for(std::map<std::string, int> :: iterator it = data_base.begin(); it != data_base.end(); it++) {
@@ -35,11 +71,10 @@ public:
         }
     }
     void setRemoveVolumeMarket(std::string basket_art, int basket_vol) {
-       auto it = data_base.find(basket_art);
-       data_base.insert(std::pair<std::string, int> (it->first, (it->second -= basket_vol)));
+        auto it = data_base.find(basket_art);
+        data_base.insert(std::pair<std::string, int> (it->first, (it->second -= basket_vol)));
     }
 };
-
 class Basket {
     std::map<std::string, int> basket_buyer;
 public:
@@ -55,34 +90,16 @@ public:
             std::cout << "Basket-Buyer Empty! " << std::endl;
         }
     }
-    
-    bool CheckArticuleInBasket(std::string _art) {
-        return basket_buyer.count(_art);
-    }
 
-    bool CheckVolumeinBasket(std::string _art, int _vol) {
-        if (basket_buyer.find(_art)->second >= _vol) {
-            return true;
-        }
-        else {
-             return false;
-        }
-    }
-    
     void PutInBasket(std::string input_art, int input_vol) {
         basket_buyer.insert(std::pair<std::string, int> (input_art, input_vol));
     }
     
     void RemoveFromBasket(std::string _art, int _vol) {
-        if (CheckVolumeinBasket(_art, _vol)) {
-            basket_buyer.find(_art)->second -= _vol;
+        basket_buyer.find(_art)->second -= _vol;
             if(basket_buyer.find(_art) ->second == 0) {
                 basket_buyer.erase(_art);
             }
-        }
-        else {
-            throw UncorrectInputVolume();
-        }
     }
     
 };
@@ -94,8 +111,12 @@ void user_input (Market& _market, Basket& _basket) {
     std::cout << "Enter the article and the desired quantity of the product: " << std::endl;
     
     while(use_input) {
-        std::cin >> articule >> volume;
+        std::cout << "Articule - ";
+        std::cin >> articule;
+        std::cout << "Volume - ";
+        std::cin >> volume;
         _basket.PutInBasket(articule, volume);
         _market.setRemoveVolumeMarket(articule, volume);
+        use_input = stop_input();
     }
 }
