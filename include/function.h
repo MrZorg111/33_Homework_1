@@ -6,6 +6,18 @@
 #include <string>
 #include <exception>
 
+void check_load_articul_market(std::string _articule) {
+    if(_articule.size() <= 0 || _articule.size() > 3) {
+        throw std::invalid_argument("Articule");
+    }
+}
+
+void check_load_volume_market(int _volume) {
+    if(_volume <= 0 || _volume > 999) {
+        throw std::invalid_argument("Volume");
+    }
+}
+
 bool stop_input() {
     std::string stop_word;
     std::cout << "To stop filling, enter ""stop""." << std::endl;
@@ -21,7 +33,7 @@ bool stop_input() {
 
 bool market_loading() {
     std::string answer;
-    std::cout << " Enter yes/no: " << std::endl;
+    std::cout << "Enter yes/no: " << std::endl;
     std::cin >> answer;
     if (answer == "yes") {
         return true;
@@ -34,20 +46,19 @@ bool market_loading() {
 class Market {
     std::map<std::string, int> data_base;
 public:
-    Market() {
+    void AutoLoadingMarket() {
         std::ifstream data_market;
-    data_market.open("data_market.json");
-    nlohmann::json dict;
-    data_market >> dict;
+        data_market.open("data_market.json");
+        nlohmann::json dict;
+        data_market >> dict;
     
-    if(!dict.empty()) {
-        data_base = dict;
-    }
-    else {
-        std::cout << "Dict empty!" << std::endl;
-    }
-    }
-
+        if(!dict.empty()) {
+            data_base = dict;
+        }
+        else {
+            std::cout << "Dict empty!" << std::endl;
+        }
+    }    
     void setHandleLoaderMarket() {
         std::string articule;
         int volume;
@@ -55,19 +66,31 @@ public:
         std::cout << "Enter the article and the desired quantity of the product: " << std::endl;
         
         while(handle_input) { 
-            std::cout << "Articule - ";
-            std::cin >> articule;
-            std::cout << "Volume - ";
-            std::cin >> volume;
-
-            data_base.insert(std::pair<std::string, int> (articule, volume));
-            handle_input = stop_input();
+            try {    
+                std::cout << "Articule - ";
+                std::cin >> articule;
+                check_load_articul_market(articule);
+                std::cout << "Volume - ";
+                std::cin >> volume;
+                check_load_volume_market(volume);
+                
+                data_base.insert(std::pair<std::string, int> (articule, volume));
+                handle_input = stop_input();
+            }
+            catch(std::invalid_argument(check_load_articul_market)) {
+                std::cerr << "Invalid argument " << check_load_articul_market.what() << std::endl;
+                continue;
+            }
+            catch(std::invalid_argument(check_load_volume_market)) {
+                std::cerr << "Invalid argument " << check_load_volume_market.what() << std::endl;
+                continue;
+            }
         }
     }
     void getMarket() {
         std::cout << "Products in the store: " << std::endl;
         for(std::map<std::string, int> :: iterator it = data_base.begin(); it != data_base.end(); it++) {
-            std::cout << "Articulate " << it->first << "\t" << " Volume " << it->second << std::endl;
+            std::cout << "\tArticulate - " << it->first << "\t" << " Volume - " << it->second << std::endl;
         }
     }
     void setRemoveVolumeMarket(std::string basket_art, int basket_vol) {
