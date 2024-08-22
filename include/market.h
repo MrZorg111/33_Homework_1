@@ -6,28 +6,11 @@
 #include <string>
 #include <exception>
 
-void check_load_articul_market(std::string _articule) {
-    if(_articule.size() <= 0 || _articule.size() > 3) {
-        throw std::invalid_argument("Articule");
-    }
-}
+//########################################---MARKET---######################################################################
 
-void check_load_volume_market(int _volume) {
-    if(_volume <= 0 || _volume > 999) {
-        throw std::invalid_argument("Volume");
-    }
-}
-
-bool stop_input() {
-    std::string stop_word;
-    std::cout << "To stop filling, enter ""stop""." << std::endl;
-    std::cin >> stop_word;
-
-    if (stop_word == "stop") {
-        return false;
-    } 
-    else {
-        return true;
+void check_load_market(std::string _articule, int _volume) {
+    if(_articule.size() <= 0 || _articule.size() > 3 || _volume <= 0 || _volume > 999) {
+        throw std::invalid_argument(_articule.size() <= 0 || _articule.size() > 3 ? "Articule" : "Volume");
     }
 }
 
@@ -40,6 +23,19 @@ bool market_loading() {
     }
     else {
          return false;
+    }
+}
+
+bool stop_input() {
+    std::string stop_word;
+    std::cout << "To stop filling, enter ""stop"" or ""go""." << std::endl;
+    std::cin >> stop_word;
+
+    if (stop_word == "stop") {
+        return true;
+    } 
+    else {
+        return false;
     }
 }
 
@@ -69,20 +65,16 @@ public:
             try {    
                 std::cout << "Articule - ";
                 std::cin >> articule;
-                check_load_articul_market(articule);
                 std::cout << "Volume - ";
                 std::cin >> volume;
-                check_load_volume_market(volume);
+                check_load_market(articule, volume);
                 
                 data_base.insert(std::pair<std::string, int> (articule, volume));
                 handle_input = stop_input();
             }
-            catch(std::invalid_argument(check_load_articul_market)) {
-                std::cerr << "Invalid argument " << check_load_articul_market.what() << std::endl;
-                continue;
-            }
-            catch(std::invalid_argument(check_load_volume_market)) {
-                std::cerr << "Invalid argument " << check_load_volume_market.what() << std::endl;
+            catch(std::invalid_argument(check_load_market)) {
+                std::cerr << "Invalid argument: " << check_load_market.what() << std::endl;
+                std::cout << "Enter the data again, be careful when entering!" << std::endl;
                 continue;
             }
         }
@@ -97,7 +89,17 @@ public:
         auto it = data_base.find(basket_art);
         data_base.insert(std::pair<std::string, int> (it->first, (it->second -= basket_vol)));
     }
+    void check_market_key(std::string _key) {
+        if(!data_base.count(_key) || _key.size() != 3) {
+            throw std::invalid_argument("Articule");
+        }
+    }
 };
+
+
+
+//########################################---BASKET---######################################################################
+
 class Basket {
     std::map<std::string, int> basket_buyer;
 public:
@@ -127,19 +129,24 @@ public:
     
 };
 
-void user_input (Market& _market, Basket& _basket) {
+void user_input (Market _market, Basket _basket) {
     std::string articule("I");
     int volume(0);
-    bool use_input = true;
-    std::cout << "Enter the article and the desired quantity of the product: " << std::endl;
     
-    while(use_input) {
-        std::cout << "Articule - ";
-        std::cin >> articule;
-        std::cout << "Volume - ";
-        std::cin >> volume;
-        _basket.PutInBasket(articule, volume);
-        _market.setRemoveVolumeMarket(articule, volume);
-        use_input = stop_input();
-    }
+    do {
+        try{
+            std::cout << "Articule - ";
+            std::cin >> articule;
+            _market.check_market_key(articule);
+            std::cout << "Volume - ";
+            std::cin >> volume;
+            _basket.PutInBasket(articule, volume);
+            _market.setRemoveVolumeMarket(articule, volume);
+        }
+        catch (std::invalid_argument(check_market_key)){
+            std::cerr << "Invalid argument: Articul" << std::endl;
+            std::cout << "This product is not available in the store, enter the request again!" << std::endl;
+            continue;
+        }
+    } while(!stop_input());
 }

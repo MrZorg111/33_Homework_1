@@ -142,7 +142,7 @@ src/CMakeFiles/33_Homework_1.dir/main.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/ostream.tcc \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/istream \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/istream.tcc \
- C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/include/function.h \
+ C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/include/market.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/fstream \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/codecvt.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
