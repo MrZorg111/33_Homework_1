@@ -1,5 +1,8 @@
 #include <iostream>
 #include "market.h"
+
+
+
 int main() {
     Market market;
     Basket basket;
@@ -16,7 +19,9 @@ int main() {
 
     std::cout << "Enter the article and the desired quantity of the product: " << std::endl;
     user_input(market, basket);
+    remove_basket(market, basket);
 
-
+    market.getMarket();
+    basket.getBasket();
     return 0;
 }

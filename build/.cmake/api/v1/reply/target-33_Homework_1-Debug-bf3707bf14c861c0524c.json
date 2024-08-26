@@ -121,8 +121,7 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1,
-				2
+				1
 			]
 		}
 	],
@@ -137,11 +136,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "include/market.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "include/basket.h",
 			"sourceGroupIndex" : 1
 		}
 	],
