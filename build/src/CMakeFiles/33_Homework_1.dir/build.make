@@ -52,10 +52,10 @@ RM = P:\CMake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\yodji\source\repos\Lesson_Skillbox\Lesson_33_Iskluchenia\33_Homework_1
+CMAKE_SOURCE_DIR = C:\Users\yodji\Desktop\Lesson_33_Iskluchenia\33_Homework_1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\yodji\source\repos\Lesson_Skillbox\Lesson_33_Iskluchenia\33_Homework_1\build
+CMAKE_BINARY_DIR = C:\Users\yodji\Desktop\Lesson_33_Iskluchenia\33_Homework_1\build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/33_Homework_1.dir/depend.make
@@ -70,18 +70,18 @@ include src/CMakeFiles/33_Homework_1.dir/flags.make
 
 src/CMakeFiles/33_Homework_1.dir/main.cpp.obj: src/CMakeFiles/33_Homework_1.dir/flags.make
 src/CMakeFiles/33_Homework_1.dir/main.cpp.obj: src/CMakeFiles/33_Homework_1.dir/includes_CXX.rsp
-src/CMakeFiles/33_Homework_1.dir/main.cpp.obj: C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/src/main.cpp
+src/CMakeFiles/33_Homework_1.dir/main.cpp.obj: C:/Users/yodji/Desktop/Lesson_33_Iskluchenia/33_Homework_1/src/main.cpp
 src/CMakeFiles/33_Homework_1.dir/main.cpp.obj: src/CMakeFiles/33_Homework_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\yodji\source\repos\Lesson_Skillbox\Lesson_33_Iskluchenia\33_Homework_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/33_Homework_1.dir/main.cpp.obj"
-	cd /d C:\Users\yodji\source\repos\Lesson_Skillbox\Lesson_33_Iskluchenia\33_Homework_1\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/33_Homework_1.dir/main.cpp.obj -MF CMakeFiles\33_Homework_1.dir\main.cpp.obj.d -o CMakeFiles\33_Homework_1.dir\main.cpp.obj -c C:\Users\yodji\source\repos\Lesson_Skillbox\Lesson_33_Iskluchenia\33_Homework_1\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\yodji\Desktop\Lesson_33_Iskluchenia\33_Homework_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/33_Homework_1.dir/main.cpp.obj"
+	cd /d C:\Users\yodji\Desktop\Lesson_33_Iskluchenia\33_Homework_1\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/33_Homework_1.dir/main.cpp.obj -MF CMakeFiles\33_Homework_1.dir\main.cpp.obj.d -o CMakeFiles\33_Homework_1.dir\main.cpp.obj -c C:\Users\yodji\Desktop\Lesson_33_Iskluchenia\33_Homework_1\src\main.cpp
 
 src/CMakeFiles/33_Homework_1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/33_Homework_1.dir/main.cpp.i"
-	cd /d C:\Users\yodji\source\repos\Lesson_Skillbox\Lesson_33_Iskluchenia\33_Homework_1\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\yodji\source\repos\Lesson_Skillbox\Lesson_33_Iskluchenia\33_Homework_1\src\main.cpp > CMakeFiles\33_Homework_1.dir\main.cpp.i
+	cd /d C:\Users\yodji\Desktop\Lesson_33_Iskluchenia\33_Homework_1\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\yodji\Desktop\Lesson_33_Iskluchenia\33_Homework_1\src\main.cpp > CMakeFiles\33_Homework_1.dir\main.cpp.i
 
 src/CMakeFiles/33_Homework_1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/33_Homework_1.dir/main.cpp.s"
-	cd /d C:\Users\yodji\source\repos\Lesson_Skillbox\Lesson_33_Iskluchenia\33_Homework_1\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\yodji\source\repos\Lesson_Skillbox\Lesson_33_Iskluchenia\33_Homework_1\src\main.cpp -o CMakeFiles\33_Homework_1.dir\main.cpp.s
+	cd /d C:\Users\yodji\Desktop\Lesson_33_Iskluchenia\33_Homework_1\build\src && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\yodji\Desktop\Lesson_33_Iskluchenia\33_Homework_1\src\main.cpp -o CMakeFiles\33_Homework_1.dir\main.cpp.s
 
 # Object files for target 33_Homework_1
 33_Homework_1_OBJECTS = \
@@ -95,18 +95,18 @@ src/33_Homework_1.exe: src/CMakeFiles/33_Homework_1.dir/build.make
 src/33_Homework_1.exe: src/CMakeFiles/33_Homework_1.dir/linkLibs.rsp
 src/33_Homework_1.exe: src/CMakeFiles/33_Homework_1.dir/objects1.rsp
 src/33_Homework_1.exe: src/CMakeFiles/33_Homework_1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\yodji\source\repos\Lesson_Skillbox\Lesson_33_Iskluchenia\33_Homework_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable 33_Homework_1.exe"
-	cd /d C:\Users\yodji\source\repos\Lesson_Skillbox\Lesson_33_Iskluchenia\33_Homework_1\build\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\33_Homework_1.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\yodji\Desktop\Lesson_33_Iskluchenia\33_Homework_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable 33_Homework_1.exe"
+	cd /d C:\Users\yodji\Desktop\Lesson_33_Iskluchenia\33_Homework_1\build\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\33_Homework_1.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/33_Homework_1.dir/build: src/33_Homework_1.exe
 .PHONY : src/CMakeFiles/33_Homework_1.dir/build
 
 src/CMakeFiles/33_Homework_1.dir/clean:
-	cd /d C:\Users\yodji\source\repos\Lesson_Skillbox\Lesson_33_Iskluchenia\33_Homework_1\build\src && $(CMAKE_COMMAND) -P CMakeFiles\33_Homework_1.dir\cmake_clean.cmake
+	cd /d C:\Users\yodji\Desktop\Lesson_33_Iskluchenia\33_Homework_1\build\src && $(CMAKE_COMMAND) -P CMakeFiles\33_Homework_1.dir\cmake_clean.cmake
 .PHONY : src/CMakeFiles/33_Homework_1.dir/clean
 
 src/CMakeFiles/33_Homework_1.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\yodji\source\repos\Lesson_Skillbox\Lesson_33_Iskluchenia\33_Homework_1 C:\Users\yodji\source\repos\Lesson_Skillbox\Lesson_33_Iskluchenia\33_Homework_1\src C:\Users\yodji\source\repos\Lesson_Skillbox\Lesson_33_Iskluchenia\33_Homework_1\build C:\Users\yodji\source\repos\Lesson_Skillbox\Lesson_33_Iskluchenia\33_Homework_1\build\src C:\Users\yodji\source\repos\Lesson_Skillbox\Lesson_33_Iskluchenia\33_Homework_1\build\src\CMakeFiles\33_Homework_1.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\yodji\Desktop\Lesson_33_Iskluchenia\33_Homework_1 C:\Users\yodji\Desktop\Lesson_33_Iskluchenia\33_Homework_1\src C:\Users\yodji\Desktop\Lesson_33_Iskluchenia\33_Homework_1\build C:\Users\yodji\Desktop\Lesson_33_Iskluchenia\33_Homework_1\build\src C:\Users\yodji\Desktop\Lesson_33_Iskluchenia\33_Homework_1\build\src\CMakeFiles\33_Homework_1.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/CMakeFiles/33_Homework_1.dir/depend
 

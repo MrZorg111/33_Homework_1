@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1
+# Install script for directory: C:/Users/yodji/Desktop/Lesson_33_Iskluchenia/33_Homework_1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,12 +39,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/build/src/cmake_install.cmake")
+  include("C:/Users/yodji/Desktop/Lesson_33_Iskluchenia/33_Homework_1/build/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/build/nlohmann_json/cmake_install.cmake")
+  include("C:/Users/yodji/Desktop/Lesson_33_Iskluchenia/33_Homework_1/build/nlohmann_json/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/yodji/Desktop/Lesson_33_Iskluchenia/33_Homework_1/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

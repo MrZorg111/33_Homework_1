@@ -6,22 +6,37 @@
 int main() {
     Market market;
     Basket basket;
-    std::cout << "Will you fill the store's warehouse yourself, or will you entrust it to professionals? " << std::endl;
-    if (market_loading()) {
-        market.setHandleLoaderMarket();
-    }
-    else {
-       market.AutoLoadingMarket();
+    bool stop_load_market = false;
+    std::string answer("I");
+    //##########################################################---MARKET---##########################################################################
+    
+    while(!stop_load_market) {
+        std::cout << "Dear store owner, how do you want to fill the warehouse with goods yourself, or entrust it to a commodity expert? (self/prof)" << std::endl;
+        std::cin >> answer;
+
+        if (answer == "self") {
+            market.setHandleLoaderMarket();
+            stop_load_market = true;
+        }
+        else if (answer == "prof") {
+            market.AutoLoadingMarket();
+            stop_load_market = true;
+        }
+        else {
+            std::cout << "Input error! Repeat the input!" << std::endl;
+            continue;
+        }
     }
     
-    std::cout << "These products are in the store's warehouse: " << std::endl;
+    std::cout << "The product presented in the store: " << std::endl;
     market.getMarket();
 
-    std::cout << "Enter the article and the desired quantity of the product: " << std::endl;
+    //###########################################################---Basket---###########################################################################
+
+    std::cout << "Welcome dear customer, what do you want? " << std::endl;
     user_input(market, basket);
-    remove_basket(market, basket);
-
-    market.getMarket();
+    std::cout << "The products are selected: " << std::endl;
     basket.getBasket();
+    remove_basket(market, basket);
     return 0;
 }

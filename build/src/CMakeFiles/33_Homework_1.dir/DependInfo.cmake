@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/src/main.cpp" "src/CMakeFiles/33_Homework_1.dir/main.cpp.obj" "gcc" "src/CMakeFiles/33_Homework_1.dir/main.cpp.obj.d"
+  "C:/Users/yodji/Desktop/Lesson_33_Iskluchenia/33_Homework_1/src/main.cpp" "src/CMakeFiles/33_Homework_1.dir/main.cpp.obj" "gcc" "src/CMakeFiles/33_Homework_1.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

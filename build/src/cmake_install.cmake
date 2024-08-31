@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/yodji/source/repos/Lesson_Skillbox/Lesson_33_Iskluchenia/33_Homework_1/src
+# Install script for directory: C:/Users/yodji/Desktop/Lesson_33_Iskluchenia/33_Homework_1/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -15,18 +15,35 @@ void check_load_market(std::string _articule, int _volume) {
 }
 //Стоп слово 
 bool stop_input() {
-    std::string stop_word;
-    std::cout << "To stop filling, enter (""stop""/""go"")." << std::endl;
-    std::cin >> stop_word;
+    for(;;) {
+        std::string stop_word;
+        std::cout << "To stop filling, enter (""stop""/""go"")." << std::endl;
+        std::cin >> stop_word;
 
-    if (stop_word == "stop") {
+        if (stop_word == "go") {
+            return false;
+        } 
+        else if (stop_word == "stop") {
+            return true;
+        }
+        else {
+            std::cout << "Input error! Repeat the input!" << std::endl;
+            continue;
+        }
+    }
+}
+//Выбор типа заполнения магазина
+bool market_loading() {
+    std::string answer;
+    std::cout << "yes/no" << std::endl;
+    std::cin >> answer;
+    if (answer == "yes") {
         return true;
-    } 
+    }
     else {
         return false;
     }
 }
-
 //Магазин
 class Market {
     std::map<std::string, int> data_base;
@@ -50,7 +67,7 @@ public:
         int volume;
         std::cout << "Enter the article and the desired quantity of the product: " << std::endl;
         
-        while(stop_input()) { 
+        do { 
             try {    
                 std::cout << "Articule - ";
                 std::cin >> articule;
@@ -65,7 +82,7 @@ public:
                 std::cout << "Enter the data again, be careful when entering!" << std::endl;
                 continue;
             }
-        }
+        }while(stop_input());
     }
     //Демонстрация товара
     void getMarket() {
@@ -105,7 +122,7 @@ public:
     //Демонстрация товара в корзине
     void getBasket() {
         if(!basket_buyer.empty()) {
-            std::cout << "\n\nBasket-Buyer: " << std::endl;
+            std::cout << "Basket-buyer! To be paid:" << std::endl;
             
             for(std::map<std::string, int> :: iterator it = basket_buyer.begin(); it != basket_buyer.end(); it++) {
                 std::cout << "\tArticulate " << it->first << "\t" << " Volume " << it->second << std::endl;
@@ -115,11 +132,11 @@ public:
             std::cout << "Basket-Buyer Empty! " << std::endl;
         }
     }
-    
+    //Покупка товара
     void PutInBasket(std::string input_art, int input_vol) {
         basket_buyer.insert(std::pair<std::string, int> (input_art, input_vol));
     }
-    
+    //Возврат товара
     void RemoveFromBasket(std::string _art, int _vol) {
         basket_buyer.find(_art)->second -= _vol;
             if(basket_buyer.find(_art) ->second == 0) {
@@ -127,25 +144,31 @@ public:
             }
     }
 };
-
+//Возврат товара на полку
 void remove_basket(Market& _market, Basket& _basket) {
-    std::string answer("I");
+    int volume(0);
+    std::string articule("I"), answer("I");
     std::cout << "Would you like to put something out of the basket and put it back on the shelf? yes/no" << std::endl;
     std::cin >> answer;
 
     if(answer == "yes") {
-        std::string articule;
-        int volume;
-        std::cout << "Enter the article and quantity of the product. " << std::endl;
-        _basket.RemoveFromBasket(articule, volume);
-        _market.setReturnProduct(articule, volume);
-    }
-    else {
-        std::cout << "To be paid ";
+        do {
+            std::cout << "Enter the article and quantity of the product. " << std::endl;
+            std::cout << "Articule - ";
+            std::cin >> articule;
+            std::cout << "Volume - ";
+            std::cin >> volume;
+            _basket.RemoveFromBasket(articule, volume);
+            _market.setReturnProduct(articule, volume);
+        }while(!stop_input());
         _basket.getBasket();
     }
-}
+    else {
+        _basket.getBasket();
+    }
 
+}
+//Выбор товара для покупки
 void user_input (Market& _market, Basket& _basket) {
     std::string articule("I");
     int volume(0);
