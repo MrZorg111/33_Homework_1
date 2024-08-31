@@ -1,5 +1,6 @@
 {
     "files.associations": {
+<<<<<<< HEAD
         "any": "cpp",
         "array": "cpp",
         "atomic": "cpp",
@@ -61,5 +62,8 @@
         "typeinfo": "cpp",
         "valarray": "cpp",
         "variant": "cpp"
+=======
+        "iostream": "cpp"
+>>>>>>> origin/main
     }
 }

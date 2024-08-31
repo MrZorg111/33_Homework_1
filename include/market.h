@@ -20,6 +20,7 @@ bool stop_input() {
         std::cout << "To stop filling, enter (""stop""/""go"")." << std::endl;
         std::cin >> stop_word;
 
+<<<<<<< HEAD
         if (stop_word == "go") {
             return false;
         } 
@@ -38,12 +39,30 @@ bool market_loading() {
     std::cout << "yes/no" << std::endl;
     std::cin >> answer;
     if (answer == "yes") {
+=======
+    if (stop_word == "go") {
+>>>>>>> origin/main
         return true;
     }
     else {
         return false;
     }
 }
+<<<<<<< HEAD
+=======
+//Выбор типа заполнения магазина
+bool market_loading() {
+    std::string answer;
+    std::cout << "yes/no" << std::endl;
+    std::cin >> answer;
+    if (answer == "yes") {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+>>>>>>> origin/main
 //Магазин
 class Market {
     std::map<std::string, int> data_base;
@@ -166,7 +185,10 @@ void remove_basket(Market& _market, Basket& _basket) {
     else {
         _basket.getBasket();
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 }
 //Выбор товара для покупки
 void user_input (Market& _market, Basket& _basket) {

@@ -35,8 +35,13 @@ int main() {
 
     std::cout << "Welcome dear customer, what do you want? " << std::endl;
     user_input(market, basket);
+<<<<<<< HEAD
     std::cout << "The products are selected: " << std::endl;
     basket.getBasket();
     remove_basket(market, basket);
+=======
+    remove_basket(market, basket);
+    
+>>>>>>> origin/main
     return 0;
 }
