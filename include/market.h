@@ -7,7 +7,7 @@
 #include <exception>
 
 //########################################---MARKET---######################################################################
-//ПРоверка правильности ввода артикула и количества товара
+//Проверка правильности ввода артикула и количества товара
 void check_load_market(std::string _articule, int _volume) {
     if(_articule.size() <= 0 || _articule.size() > 3 || _volume <= 0 || _volume > 999) {
         throw std::invalid_argument(_articule.size() <= 0 || _articule.size() > 3 ? "Articule" : "Volume");
@@ -82,11 +82,10 @@ public:
                 std::cout << "Enter the data again, be careful when entering!" << std::endl;
                 continue;
             }
-        }while(stop_input());
+        }while(!stop_input());
     }
     //Демонстрация товара
     void getMarket() {
-        std::cout << "Products in the store: " << std::endl;
         for(std::map<std::string, int> :: iterator it = data_base.begin(); it != data_base.end(); it++) {
             std::cout << "\tArticulate - " << it->first << "\t" << " Volume - " << it->second << std::endl;
         }
@@ -138,10 +137,15 @@ public:
     }
     //Возврат товара
     void RemoveFromBasket(std::string _art, int _vol) {
-        basket_buyer.find(_art)->second -= _vol;
-            if(basket_buyer.find(_art) ->second == 0) {
-                basket_buyer.erase(_art);
-            }
+        if(!basket_buyer.count(_art) || basket_buyer.find(_art)->second < _vol) {
+            throw std::invalid_argument(!basket_buyer.count(_art) ? "Articule" : "Volume");
+        }
+        else {
+            basket_buyer.find(_art)->second -= _vol;
+                if(basket_buyer.find(_art) ->second == 0) {
+                    basket_buyer.erase(_art);
+                }
+        }
     }
 };
 //Возврат товара на полку
@@ -152,14 +156,20 @@ void remove_basket(Market& _market, Basket& _basket) {
     std::cin >> answer;
 
     if(answer == "yes") {
+        std::cout << "Enter the article and quantity of the product. " << std::endl;
         do {
-            std::cout << "Enter the article and quantity of the product. " << std::endl;
             std::cout << "Articule - ";
             std::cin >> articule;
             std::cout << "Volume - ";
             std::cin >> volume;
-            _basket.RemoveFromBasket(articule, volume);
-            _market.setReturnProduct(articule, volume);
+            try {
+                _basket.RemoveFromBasket(articule, volume);
+                _market.setReturnProduct(articule, volume);
+            }
+            catch (std::invalid_argument(RemoveFromBasket)) {
+                std::cerr << "Invalid argument " << RemoveFromBasket.what() << std::endl;
+                std::cout << "Input error, enter this again, be careful!" << std::endl;
+            }
         }while(!stop_input());
         _basket.getBasket();
     }
