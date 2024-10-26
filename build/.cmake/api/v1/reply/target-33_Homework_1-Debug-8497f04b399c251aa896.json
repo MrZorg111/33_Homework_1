@@ -59,11 +59,11 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/yodji/Desktop/Lesson_33_Iskluchenia/33_Homework_1/include"
+					"path" : "C:/Users/yodji/Desktop/33_Homework_1/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/yodji/Desktop/Lesson_33_Iskluchenia/33_Homework_1/nlohmann_json/include"
+					"path" : "C:/Users/yodji/Desktop/33_Homework_1/nlohmann_json/include"
 				}
 			],
 			"language" : "CXX",

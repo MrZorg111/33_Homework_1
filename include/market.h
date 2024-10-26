@@ -7,13 +7,13 @@
 #include <exception>
 
 //########################################---MARKET---######################################################################
-//Проверка правильности ввода артикула и количества товара
+//Checking the correctness of the entry of the article and the quantity of the product
 void check_load_market(std::string _articule, int _volume) {
     if(_articule.size() <= 0 || _articule.size() > 3 || _volume <= 0 || _volume > 999) {
         throw std::invalid_argument(_articule.size() <= 0 || _articule.size() > 3 ? "Articule" : "Volume");
     }
 }
-//Стоп слово 
+//Safe word 
 bool stop_input() {
     for(;;) {
         std::string stop_word;
@@ -32,7 +32,7 @@ bool stop_input() {
         }
     }
 }
-//Выбор типа заполнения магазина
+//Choosing the type of store filling
 bool market_loading() {
     std::string answer;
     std::cout << "yes/no" << std::endl;
@@ -44,11 +44,11 @@ bool market_loading() {
         return false;
     }
 }
-//Магазин
+//Shop
 class Market {
     std::map<std::string, int> data_base;
 public:
-    //Заполнение магазина товаром (Авто/ручное)
+    //Filling the store with goods (Auto/manual)
     void AutoLoadingMarket() {
         std::ifstream data_market;
         data_market.open("data_market.json");
@@ -84,22 +84,22 @@ public:
             }
         }while(!stop_input());
     }
-    //Демонстрация товара
+    //Product demonstration
     void getMarket() {
         for(std::map<std::string, int> :: iterator it = data_base.begin(); it != data_base.end(); it++) {
             std::cout << "\tArticulate - " << it->first << "\t" << " Volume - " << it->second << std::endl;
         }
     }
-    //Продажа
+    //Sale
     void setRemoveVolumeMarket(std::string basket_art, int basket_vol) {
         auto it = data_base.find(basket_art);
         data_base.insert(std::pair<std::string, int> (it->first, (it->second -= basket_vol)));
     }
-    //Возврат
+    //Refund
     void setReturnProduct(std::string _art, int _vol) {
         data_base.insert(std::pair<std::string, int> (_art, _vol));
     }
-    //ПРоверка наличия товара и соответствие его количества при продаже
+    //Checking the availability of the product and matching its quantity when selling
     void check_market(std::string _key, int _volume) {
         if(!data_base.count(_key) || _key.size() != 3) {
             throw std::invalid_argument("Articule");
@@ -114,11 +114,11 @@ public:
 
 //########################################---BASKET---######################################################################
 
-//Корзина
+//Basket
 class Basket {
     std::map<std::string, int> basket_buyer;
 public:
-    //Демонстрация товара в корзине
+    //Product demonstration in the shopping cart
     void getBasket() {
         if(!basket_buyer.empty()) {
             std::cout << "Basket-buyer! To be paid:" << std::endl;
@@ -131,11 +131,11 @@ public:
             std::cout << "Basket-Buyer Empty! " << std::endl;
         }
     }
-    //Покупка товара
+    //Purchase of goods
     void PutInBasket(std::string input_art, int input_vol) {
         basket_buyer.insert(std::pair<std::string, int> (input_art, input_vol));
     }
-    //Возврат товара
+    //Return of the product
     void RemoveFromBasket(std::string _art, int _vol) {
         if(!basket_buyer.count(_art) || basket_buyer.find(_art)->second < _vol) {
             throw std::invalid_argument(!basket_buyer.count(_art) ? "Articule" : "Volume");
@@ -148,7 +148,7 @@ public:
         }
     }
 };
-//Возврат товара на полку
+//Return of the product to the shelf
 void remove_basket(Market& _market, Basket& _basket) {
     int volume(0);
     std::string articule("I"), answer("I");
@@ -177,7 +177,7 @@ void remove_basket(Market& _market, Basket& _basket) {
         _basket.getBasket();
     }
 }
-//Выбор товара для покупки
+//Choosing an item to buy
 void user_input (Market& _market, Basket& _basket) {
     std::string articule("I");
     int volume(0);

@@ -79,7 +79,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "33_Homework_1::@145eef247bfb46b6828c",
-					"jsonFile" : "target-33_Homework_1-Debug-2c90f81b0b439fda4025.json",
+					"jsonFile" : "target-33_Homework_1-Debug-8497f04b399c251aa896.json",
 					"name" : "33_Homework_1",
 					"projectIndex" : 0
 				}
@@ -89,8 +89,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/yodji/Desktop/Lesson_33_Iskluchenia/33_Homework_1/build",
-		"source" : "C:/Users/yodji/Desktop/Lesson_33_Iskluchenia/33_Homework_1"
+		"build" : "C:/Users/yodji/Desktop/33_Homework_1/build",
+		"source" : "C:/Users/yodji/Desktop/33_Homework_1"
 	},
 	"version" : 
 	{
